@@ -55,13 +55,13 @@ function nkarel(matrix) {
         socket.emit("add grass")
     }
     function addGrassEater() {
-        socket.emit("add grass eater")
+        socket.emit("addgrasseater")
     }
     function addPredator() {
-        socket.emit("add predator")
+        socket.emit("addpredator")
     }
     function addPredatorEater() {
-        socket.emit("add predator eater")
+        socket.emit("addpredatoreater")
     }
     function addPeople() {
         socket.emit("add people")
@@ -69,3 +69,7 @@ function nkarel(matrix) {
     function addWall() {
         socket.emit("add wall")
     }
+
+
+
+   

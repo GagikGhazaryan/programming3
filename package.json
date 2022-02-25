@@ -1,10 +1,10 @@
 {
   "name": "programming3",
   "version": "1.0.0",
-  "description": "game of life",
-  "main": "server.js",
+  "description": "game of life ",
+  "main": "LivingCreature.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "server.js",
     "start": "node server.js"
   },
   "repository": {
