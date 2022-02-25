@@ -1,4 +1,7 @@
-class People extends LivingCreature {
+let LivingCreature = require("./LivingCreature")
+
+
+module.exports = class People extends LivingCreature {
     constructor(x, y) {
         super(x,y)
         this.energy = 8;
@@ -15,8 +18,8 @@ class People extends LivingCreature {
 
     mul() {
         this.multiply++;
-        var emptyCells = this.chooseCell(0);
-        var newCell = random(emptyCells);
+        var emptyCells = super.chooseCell(0);
+        var newCell = emptyCells[Math.floor(Math.random() * emptyCells.length)];
 
 
         if (newCell && this.multiply >= 15) {
@@ -32,7 +35,7 @@ class People extends LivingCreature {
 
     move() {
         this.energy--
-        var emptyCells = this.chooseCell(0)
+        var emptyCells = super.chooseCell(0)
         var newCell = emptyCells[Math.floor(Math.random() * emptyCells.length)]
 
         if (newCell && this.energy >= 0) {
@@ -52,11 +55,11 @@ class People extends LivingCreature {
     }
 
     eat() {
-        var emptyCells = this.chooseCell(4)
+        var emptyCells = super.chooseCell(4)
         var newCell = emptyCells[Math.floor(Math.random() * emptyCells.length)]
-        var emptyCells1 = this.chooseCell(3)
+        var emptyCells1 = super.chooseCell(3)
         var newCell1 = emptyCells1[Math.floor(Math.random() * emptyCells1.length)]
-        var emptyCells6 = this.chooseCell(6)
+        var emptyCells6 = super.chooseCell(6)
         var newCell6 = emptyCells6[Math.floor(Math.random() * emptyCells6.length)]
 
 
