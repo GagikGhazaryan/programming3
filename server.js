@@ -247,3 +247,18 @@ io.on('connection', function (socket) {
     socket.on("add wall", addWall)
 })
 
+statistics = {
+
+}
+
+setInterval(function() {
+    statistics.grass = grassArr.length;
+    statistics.grassEater = grassEaterArr.length;
+    statistics.predator = predatorArr.length;
+    statistics.predatorEater = predatorEaterArr.length;
+    statistics.people = peopleArr.length;
+    statistics.wall = wallArr.length
+    fs.writeFile("statistics.json", JSON.stringify(statistics), function(){
+        console.log("send")
+    })
+},1000)

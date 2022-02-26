@@ -1,17 +1,26 @@
 var socket = io();
 
-let side = 25;
+let side = 30;
 
 
 function setup() {
-    createCanvas(15 * side, 15 * side)
+    createCanvas(20 * side, 20 * side)
     background('#acacac');
     frameRate(5)
-    
+
 }
+
+socket.on("weather", function (data) {
+    weath = data;
+})
+
+
+
 function nkarel(matrix) {
     for (var y = 0; y < matrix.length; y++) {
         for (var x = 0; x < matrix[y].length; x++) {
+
+            var obj = matrix[y][x];
 
             if (matrix[y][x] == 1) {
                 fill("green");
@@ -39,37 +48,36 @@ function nkarel(matrix) {
         }
     }
 
-    
-    
 }
 
 
-    socket.on('send matrix', nkarel)
-   
 
 
-    function kill() {
-        socket.emit("kill")
-    }
-    function addGrass() {
-        socket.emit("add grass")
-    }
-    function addGrassEater() {
-        socket.emit("addgrasseater")
-    }
-    function addPredator() {
-        socket.emit("addpredator")
-    }
-    function addPredatorEater() {
-        socket.emit("addpredatoreater")
-    }
-    function addPeople() {
-        socket.emit("add people")
-    }
-    function addWall() {
-        socket.emit("add wall")
-    }
+socket.on('send matrix', nkarel)
 
 
 
-   
+function kill() {
+    socket.emit("kill")
+}
+function addGrass() {
+    socket.emit("add grass")
+}
+function addGrassEater() {
+    socket.emit("add grassEater")
+}
+function addPredator() {
+    socket.emit("add predator")
+}
+function addPredatorEater() {
+    socket.emit("add predatorEater")
+}
+function addPeople() {
+    socket.emit("add people")
+}
+function addWall() {
+    socket.emit("add wall")
+}
+
+
+
