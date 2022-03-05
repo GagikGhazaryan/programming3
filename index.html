@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,28 +11,57 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <li>
-        <button onclick="kill()">Kill them all</button>
-    </li>
-    <li>
-        <button onclick="addGrass()">Add grass</button>
-    </li>
-    <li>
-        <button onclick="addGrassEater()">Add grass eater</button>
-    </li>
-    <li>
-        <button onclick="addPredator()">Add predator</button>
-    </li>
-    <li>
-        <button onclick="addPredatorEater()">Add predator eater</button>
-    </li>
-    <li>
-        <button onclick="addPeople()">Add people</button>
-    </li>
-    <li>
-        <button onclick="addWall()">Add wall</button>
-    </li>
-    
+    <h2>Description</h2>
+
+<table>
+  <tr>
+    <th>Characters</th>
+    <th>Eat</th>
+    <th>No Touch</th>
+  </tr>
+  <tr>
+    <td>Grass</td>
+    <td>-</td>
+    <td>All</td>
+  </tr>
+  <tr>
+    <td>GrassEater</td>
+    <td>Grass</td>
+    <td>All Except Grass</td>
+  </tr>
+  <tr>
+    <td>Predator</td>
+    <td>GrassEater</td>
+    <td>All  Except GrassEater</td>
+  </tr>
+  <tr>
+    <td>PredatorEater</td>
+    <td>Predator;Wall</td>
+    <td>All  Except Predator;Wall</td>
+  </tr>
+  <tr>
+    <td>People</td>
+    <td>Predator;PredatorEater;Wall</td>
+    <td>All Except Predator;PredatorEater;Wall</td>
+  </tr>
+  <tr>
+    <td>Wall</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</table>
+
+    <div class="container">
+        <button class="kbtn" onclick="kill()">Kill them all</button>
+        <button class="btn1" onclick="addGrass()">Add grass</button>
+        <button class="btn2" onclick="addPredator()">Add predator</button>
+        <button class="btn3" onclick="addPeople()">Add people</button>
+        <button class="btn4" onclick="addGrassEater()">Add grass eater</button>
+        <button class="btn5" onclick="addPredatorEater()">Add predator eater</button>
+        <button class="btn6" onclick="addWall()">Add wall</button>
+    </div>
 </body>
+
 </html>

@@ -69,7 +69,7 @@ function generator(matLen, gr, grEat, pr, prEat, peop, wall) {
     return matrix;
 }
 
-matrix = generator(20, 60, 10, 10, 10, 20,5);
+matrix = generator(25, 20, 10, 10, 10, 20,5);
 
 io.sockets.emit('send matrix',matrix)
 

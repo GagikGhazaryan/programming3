@@ -12,23 +12,259 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    min-height: 10vh;
+    min-height: 2vh;
 }
 
-. {
-    width: 300px;
+.kbtn {
+    width: 350px;
     height: 100px;
     border: none;
     color: white;
     background-color: rgb(255, 0, 68);
     border-radius: 4px;
-    box-shadow: inset 0 0 0 0 #f9e506;
+    box-shadow: inset 0 0 0 0 #f1e101f3;
     transition: ease-out 0.3s;
+    font-size: 2rem;
     outline: none;
+    position:absolute;
+    left: 70%;
+    top:3%;
+
 }
 
-.:hover {
-    box-shadow: inset 300px 0 0 0 #f9e506;
+.kbtn:hover {
+    box-shadow: inset 350px 0 0 0 #f1e101f3;
     cursor: pointer;
     color: #000;
 } 
+.btn1 {
+    width: 350px;
+    height: 100px;
+    border: none;
+    color: white;
+    background-color: rgb(241, 0, 0);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #f1e101f3;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    position:absolute;
+    left:58%;
+    top:20%;
+
+}
+
+.btn1:hover {
+    box-shadow: inset 350px 0 0 0 #f1e101f3;
+    cursor: pointer;
+    color: #000;
+} 
+
+.btn2 {
+    width: 350px;
+    height: 100px;
+    border: none;
+    color: white;
+    background-color: rgb(4, 0, 245);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #f1e101f3;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    position:absolute;
+    left:58%;
+    top:38%;
+
+}
+
+.btn2:hover {
+    box-shadow: inset 350px 0 0 0 #f1e101f3;
+    cursor: pointer;
+    color: #000;
+} 
+
+.btn3 {
+    width: 350px;
+    height: 100px;
+    border: none;
+    color: white;
+    background-color: rgba(243, 117, 0, 0.952);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #f1e101f3;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    position:absolute;
+    left:58%;
+    top:55%;
+
+}
+
+.btn3:hover {
+    box-shadow: inset 350px 0 0 0 #f1e101f3;
+    cursor: pointer;
+    color: #000;
+} 
+
+
+.btn4 {
+width: 300px;
+height: 100px;
+border: none;
+color: white;
+border-radius: 4px;
+transition: ease-out 0.3s;
+font-size: 2rem;
+outline: none;
+border: 3px solid #42fbf2;
+position: absolute;
+z-index: 1;
+left:83%;
+top: 20%;
+}
+
+.btn4:hover{
+color: #fff;
+cursor: pointer;
+}
+
+.btn4::before{
+transition: 0.5 all ease;
+position: absolute;
+top:0;
+left: 50%;
+right: 50%;
+bottom: 0;
+opacity: 0;
+content: "";
+background-color: #42fbf2;
+}
+
+.btn4:hover::before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+
+.btn5 {
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid #42fbf2;
+    position: absolute;
+    z-index: 1;
+    left:83%;
+    top: 38%;
+    }
+    
+    .btn5:hover{
+    color: #fff;
+    cursor: pointer;
+    }
+    
+    .btn5::before{
+    transition: 0.5 all ease;
+    position: absolute;
+    top:0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #42fbf2;
+    }
+    
+    .btn5:hover::before{
+        transition: 0.5s all ease;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        z-index: -1;
+    }
+
+    .btn6 {
+        width: 300px;
+        height: 100px;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        transition: ease-out 0.3s;
+        font-size: 2rem;
+        outline: none;
+        border: 3px solid #42fbf2;
+        position: absolute;
+        z-index: 1;
+        left:83%;
+        top: 55%;
+        }
+        
+        .btn6:hover{
+        color: #fff;
+        cursor: pointer;
+        }
+        
+        .btn6::before{
+        transition: 0.5 all ease;
+        position: absolute;
+        top:0;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        opacity: 0;
+        content: "";
+        background-color: #42fbf2;
+        }
+        
+        .btn6:hover::before{
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+            z-index: -1;
+        }
+
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+            position: absolute;
+            left:53%;
+            top: 75%;
+          }
+          
+          td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 7px;
+            color: #fff;
+          }
+          
+          tr:nth-child(even) {
+            background-color: #dddddd;
+          }
+
+          h2{
+            align-items: center;
+            text-align: center;
+    width: 250px;
+    height: 50px;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid #42fbf2;
+    z-index: 1;
+    position: absolute;
+    left:73%;
+    top: 65%;
+          }

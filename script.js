@@ -1,10 +1,10 @@
 var socket = io();
 
-let side = 30;
+let side = 40;
 
 let weath = "spring"
 function setup() {
-    createCanvas(20 * side, 20 * side)
+    createCanvas(25 * side, 24 * side)
     background('#acacac');
     frameRate(5)
 
